@@ -1,0 +1,1241 @@
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.body1{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    /* height: 6000px; */
+}
+
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(20, 19, 19 ,.8);
+    position: fixed;
+    z-index:50 ;
+    top: 0;
+}
+
+.img1{
+    width: 150px;
+    height: 50px;
+    margin-left: 150px;
+    float: left;
+}
+
+.list{
+    list-style-type:none ; 
+    float: right;
+}
+
+.list  li{
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 13px;
+    font-size: 18px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.list  li  a{
+    text-decoration: none;
+    color: gold;
+    padding: 15px ;
+}
+
+.list  li  a:hover{
+    background-color: rgb(46, 44, 44);
+}
+
+.icon_1{
+    color: gold;
+    font-size: 15px;
+}
+
+/* .......................................................... Home ............................................................... */
+
+.home_all{
+    width: 100%;
+    height:100vh ;
+    background-color: rgb(179, 173, 173);
+    background-image: url(../Image/op.jpg);
+    position: relative;
+    top:0;
+}
+
+.home_out{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0 ,0.7);
+}
+
+.home_info{
+    position: absolute;
+    padding: 10px;
+    line-height: 50px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%  ,-50% );
+}
+
+.home_info_h1{
+    font-size:45px;
+    color: white;
+
+}
+
+.home_info_p1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.home_info_but1{
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+    border-radius: 5px;
+    padding: 5px;
+    background-color:white;
+    color: black;
+    border: none;
+}
+
+.home_info_but2{
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(40, 40, 173);
+    color: white;
+    border: none;
+}
+
+.home_info_but1:hover{
+    background-color: rgb(83, 83, 89);
+    color: white;
+}
+
+.home_info_but2:hover{
+    background-color: rgb(83, 83, 89);
+    color: white;
+}
+
+/* ........................................................... page Welcome .......................................................... */
+
+.ALL_PAGE{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 0;
+}
+
+.all_page{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+}
+
+.all_h1_in_page{
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 100px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.all_hr_in_page{
+    width: 5%;
+    height: 4px;
+    background-color: blue;
+    margin-left: 650px;
+    margin-top: 4px;
+}
+
+.container{
+    width: 80%;
+    margin-top: 70px;
+    margin: auto; 
+}
+
+.all_page_content{
+    overflow: auto;
+    margin-top: 70px; 
+}
+
+.Welcome_item{
+    width: 30%;
+    border: 1px solid gray;
+    text-align: center;
+    padding: 30px 5px 30px 5px;
+    font-size: 23px;
+    position: relative;
+    float: left;
+}
+
+.Welcome_icon{
+    color: rgb(105, 115, 232);
+    font-size: 35px;
+}
+
+.Welcome_h{
+    font-size: 30px;
+    padding: 10px;
+}
+
+.Welcome_p{
+    font-size: 19px;
+    letter-spacing: 1px;
+    color: rgb(171, 162, 162);
+    padding: 0px 0px 10px 0px;
+}
+
+.Welcome_a{
+    text-decoration: none;
+    color: rgb(105, 115, 232);
+    font-size: 20px;
+}
+
+.Welcome_item:hover .Welcome_h{
+    color: white;
+    transition: .8s;
+}
+
+.Welcome_item::after{
+    position: absolute;
+    content: "";
+
+    width: 0 ;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+    background-color: rgb(40, 39, 39);
+    opacity: 0;
+    z-index: -1;
+    transition: .5s;
+}
+.Welcome_item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: .9;
+
+}
+
+.oo{
+    margin: 0px 5%;
+}
+
+/* ........................................................... page Frontend .......................................................... */
+
+.Frontend{
+    width: 100%;
+    height: 150vh;
+    background-color: rgb(235, 235, 235);
+    position: relative;
+    top: 0;
+}
+
+.Frontend_item{
+    float: left;
+    background-color: rgb(232, 232, 232);
+    width: 29.5%;
+    padding: 14px 0px 14px 3px;
+    margin: auto;
+    text-align: center;
+    position:relative;
+}
+
+.Frontend_image{
+    margin: auto;
+    width: 90%;
+    background-color: white;
+    position: relative; 
+}
+
+.Frontend_overlay{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0,0.7);  
+    visibility: hidden;
+}
+
+.Frontend_overlay_h2{
+    font-size: 40px;
+    color:rgb(243, 246, 247);
+    margin-top: 25%;
+    padding: 0px 0px 6px 0px;
+    visibility: hidden;
+    opacity: 0;
+
+}
+
+.Frontend_overlay_p{
+    font-size: 20px;
+    padding: 0px 0px 15px 0px;
+    color:rgb(255, 255, 255);
+    letter-spacing: 1px;
+    visibility: hidden;
+    opacity: 0;
+
+}
+
+.Frontend_overlay_icon{
+    font-size: 20px;
+    color: white;
+    background-color:rgb(90, 90, 196);
+    padding: 8px;
+    visibility: hidden;
+    opacity: 0;
+
+}
+
+.Frontend_item:hover .Frontend_overlay{
+    opacity: 1;
+    visibility: visible; 
+}
+
+.Frontend_item:hover .Frontend_overlay .Frontend_overlay_h2{
+    opacity: 1;
+    padding: 0px 0px 3px 0px;
+    visibility: visible; 
+    transition: 1.5s;
+}
+
+.Frontend_item:hover .Frontend_overlay .Frontend_overlay_p{
+    opacity: 1;
+    padding: 0px 0px 10px 0px;
+    visibility: visible; 
+    transition: 1s;
+}
+
+.Frontend_item:hover .Frontend_overlay .Frontend_overlay_icon{
+    opacity: 1;
+    visibility: visible; 
+    transition: .5s;
+}
+.END{
+    margin: 0px 5%;
+}
+.fe{
+    margin-top: 35px;
+} 
+
+.fed{
+
+    margin: 35px 5% 0px 5%;
+}
+
+/* ........................................................... page What We Offer .......................................................... */
+
+.What_We{
+    width: 100%;
+    height: 110vh;
+    position: relative;
+    top: 0;
+}
+
+.What_We_item{
+    width: 30%;
+    border: 1px solid gray;
+    padding: 30px 5px 30px 5px;
+    position: relative;
+    float: left;
+}
+
+.What_We_icon{
+    color: rgb(105, 115, 232);
+    font-size: 30px;
+    margin-left: 15px;
+    float: left;
+}
+
+.What_We_h{
+    font-size: 25px;
+    margin-left: 20px;
+    display: inline;
+
+}
+
+.What_We_p{
+    font-size: 19px;
+    line-height: 30px;
+    color: rgb(171, 162, 162);
+    margin-left: 65px;
+    margin-right: 40px;
+}
+
+.What_We_item:hover .What_We_h{
+    color: white;
+    transition: .8s;
+}
+
+.What_We_item::after{
+    position: absolute;
+    content: "";
+
+    width: 0 ;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+    background-color: rgb(40, 39, 39);
+    opacity: 0;
+    z-index: -1;
+    transition: .5s;
+}
+.What_We_item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: .9;
+
+}
+
+.ww{
+    margin-top: 20px;
+} 
+
+.wwo{
+
+    margin: 20px 5% 0px 5%;
+}
+
+/* .......................................................... Why Choose Us ............................................................ */
+
+.WHY_CHOOSE{
+    width: 100%;
+    height: 105vh;
+    background-color: rgb(245, 245, 245);
+    position: relative;
+    top: 0;
+}
+.Why_Choose_h1{
+    color: black;
+    font-size: 40px;
+    margin-top: 100px;
+    margin-left: 150px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Why_Choose_hr{
+    width: 10%;
+    height: 4px;
+    background-color: blue;
+    margin-top: 4px;
+    margin-left: 155px;
+}
+
+.Why_Choose_item{
+    width: 45%;
+    float: left;
+}
+
+.Why_Choose_info_p{
+    font-weight: bold;
+    font-size:17px;
+    color: rgb(111, 111, 111);
+    margin-left: 150px;
+    padding: 40px 0px 25px 0px;
+}
+
+.Why_Choose_info_list{
+    margin-left: 15px;
+    margin-left: 150px;
+    color: rgb(111, 111, 111);
+    font-size: 18px;
+    list-style-type: none;
+}
+
+.Why_Choose_info_list_li{
+    font-size: 22px;
+    color: rgb(111, 167, 236);
+    padding:8px 0px;
+}
+
+.Why_Choose_item_img{
+    width: 85%;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-top: 100px;
+}
+
+.Why_Choose_item_list2{
+    margin-left: 45%;
+    font-size: 10px;
+    word-spacing: 10px;
+    margin-top: 5px;
+    color: gray;
+}
+
+.Why_Choose_item_list2 li{
+    display: inline;
+}
+
+.Why_Choose_item_list2 li:hover{
+    color: blue;
+}
+
+.Why_Choose_item_list2_li{
+ color: blue;
+}
+
+/* .......................................................... Hidden Page ............................................................ */
+
+.Hidden_page{
+    width: 100%;
+    height: 60vh;
+    /* margin-top: 100px; */
+    position: relative;
+    top: 0;
+}
+
+.Hidden_all{
+    width: 100%;
+    height: 100%;
+    background-image: url(../Image/hi.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    background-color: rgb(235, 235, 235);
+}
+
+.Hidden_container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+
+.Hidden_item{
+    width: 20%;
+    padding: 30px 5px 30px 5px;
+    margin-top: 20px;
+    margin: 35px 26px;
+    text-align: center;
+    position: relative;
+    float: left;
+}
+
+.Hidden_item_icon{
+    color: rgb(77, 85, 173);
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.Hidden_item_h3{
+    color: white;
+    font-size: 30px;
+}
+
+.Hidden_item_sp1{
+    color: white;
+    font-size: 18px;
+}
+
+/* .......................................................... Pricing Table ............................................................ */
+
+.Pricing_item{
+    width: 30%;
+    border: 1px solid gray;
+    text-align: center;
+    padding: 30px;
+    line-height: 30px;
+    color: rgb(94, 94, 94);
+    position:relative;
+    float: left;
+}
+.Pricing_item_img{
+    width: 100px;
+    height: 95px;
+    border: 2px solid rgb(136, 136, 242);
+    margin: auto;
+    line-height: 35px;
+    padding:18px 12px;
+    border-radius: 90px;
+    color:black;
+}
+
+.Pricing_item_p1{
+    font-size: 17px;
+    margin: 0px 0px 15px 0px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.Pricing_item:hover .Pricing_item_p1{
+    color: rgb(184, 10, 10);
+    transition: .4s;
+}
+
+.Pricing_item_h2{
+    font-size: 40px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.Pricing_item_info{
+    font-size: 17px;
+    margin: 15px 0px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.Pricing_item_but{
+    color: white;
+    font-size: 17px;
+    font-family:'Times New Roman', Times, serif;
+    border-radius: 10px;
+    border: none;
+    padding: 6px 10px;
+    background-color: rgb(66, 66, 218);
+}
+
+.Pricing_item_but:hover{
+    background-color: rgb(83, 83, 89);
+}
+
+.Pricing_item:hover .Pricing_item_img{
+    color: rgb(184, 10, 10);
+    transition: 1s;
+}
+
+.Pricing_item::after{
+    position: absolute;
+    content: "";
+
+    width: 0 ;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+    background-color: rgb(93, 88, 88);
+    opacity: 0;
+    transition: 1s;
+    z-index: -1;
+}
+.Pricing_item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: .2;
+}
+
+.Pricing_item::before{
+    position: absolute;
+    content: "";
+
+    width: 0 ;
+    height: 0;
+
+    bottom: 0;
+    right: 0;
+
+    background-color: rgb(93, 88, 88);
+    opacity: 0;
+    transition: 1s;
+    z-index: -1;
+}
+.Pricing_item:hover::before{
+    width: 100%;
+    height: 100%;
+    opacity: .2;
+}
+
+.pt{
+    margin: 0px 5%;
+}
+
+/* .......................................................... Hidden Page2 ............................................................ */
+
+.Hidden2_page{
+    width: 100%;
+    height: 60vh;
+    margin-top: 120px;
+    position: relative;
+    top: 0;
+}
+
+.Hidden2_all{
+    width: 100%;
+    height: 100%;
+    background-image: url(../Image/Hidden.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+}
+
+.Hidden2_container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+
+.Hidden2_item{
+    width: 45%;
+    padding: 30px 5px 30px 5px;
+    margin-top: 20px;
+    margin: 26px 10px;
+    /* text-align: center; */
+    position: relative;
+    float: left;
+    overflow: auto;
+}
+
+.Hidden2_img1{
+    float: left;
+    border-radius: 35px;
+    margin-left: 190px;
+}
+
+.Hidden2_info{
+    line-height: 20px;
+}
+
+.Hidden2_info_h2{
+    color: white;
+    float: left;
+    display: block;
+    margin-left: 10px;
+    margin-top: 10px ;
+}
+
+.Hidden2_info_p1{
+    color: rgb(129, 129, 246);
+    font-size: 20px;
+    float: left;
+    margin-left: 10px;
+}
+
+.Hidden2_item_p2{
+    color: white;
+    float: left;
+    font-size: 17px;
+    margin-left: 204px;
+    margin-top: 20px;
+    text-transform:capitalize ;
+}
+
+/* .......................................................... Page Services ............................................................ */
+
+.Services{
+    width: 100%;
+    height: 105vh;
+    background-color: rgb(232, 232, 232);
+    position: relative;
+    top: 0;
+}
+
+.Services_item{
+   float: left;
+   background-color:rgb(240, 240, 240);
+   width: 30%;
+   padding: 20px 25px;
+   text-align: center;
+   position:relative;
+} 
+
+.Services_image img{
+    width: 100%; 
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.Services_info_titel{
+    margin-bottom: 20px;
+    text-transform:uppercase;
+}
+
+.Services_info_sp1{
+    font-size: 17px;
+    text-transform: capitalize;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    color: gray;
+}
+
+.Services_item::after{
+    position: absolute;
+    content: "";
+
+    width: 0 ;
+    height: 85%;
+
+    top: 0;
+    left: 0;
+
+    background-color: rgb(173, 173, 173);
+    opacity: 0;
+    /* z-index: -1; */
+    transition: .5s;
+}
+.Services_item:hover::after{
+    width: 100%;
+    height: 85%;
+    opacity: .2;
+}
+
+.Services_info_a{
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 25px 0px 0px 0px;
+    color: rgb(103, 103, 229);
+}
+
+.Services_info_a:hover{
+    color: blue;
+}
+
+.PS{
+    margin: 0px 5%;
+}
+
+/* ............................................................ Page Team ...................................................... */
+
+.Our_Team{
+    width: 100%;
+    height: 115vh;
+    background-color: rgb(29, 26, 26);
+    position: relative;
+    top:0;
+}
+
+.Our_Team_h1{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 100px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.Our_Team_hr{
+    width: 5%;
+    height: 4px;
+    background-color:gold;
+    margin-left: 650px;
+    margin-top: 4px;
+}
+
+.Teme_container{
+    width: 80%;
+    margin-top: 70px;
+    margin: auto; 
+}
+
+.Team_Itme{
+    width: 30%;
+    height: 379px;
+    background-color: rgb(67, 64, 64);
+    text-align: center;
+    padding: 25px;
+    float: left;
+    position: relative;
+}
+
+.Team_Itme::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+    transition: 1s;
+}
+.Team_Itme:hover:after{
+    width: 100%;
+    height: 86%;
+    opacity: .1;
+}
+
+.Team_Itme::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    bottom: 14%;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+    transition: 1s;
+}
+.Team_Itme:hover::before{
+    width: 100%;
+    height: 86%;
+    opacity: 0;
+}
+
+.Team_Itme_image{
+    width: 70%;
+    height: 57%;
+    border: 2px solid gold;
+    background-color: gold;
+    border-radius: 90px;
+    margin: auto;
+}
+
+.Team_Itme_image_img{
+    width: 92%;
+    height: 94%;
+    margin-top: 5.5px;
+    border: 2px solid black;
+    background-image: url("../Image/Osama.jpg");
+    border-radius: 90px;
+    background-size: cover;
+}
+
+.Team_info{
+    padding: 20px;
+    line-height: 40px;
+}
+
+.Team_info_h2{
+    font-size: 35px;
+    color:white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.Team_info_p{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: gold;
+}
+
+.Team_icon{
+    letter-spacing: 2px;
+    opacity: .5;
+    transition: 2s;
+}
+
+.Team_Itme:hover .Team_icon{
+    opacity: 1;
+}
+
+.Team_icon_1_i{
+    color: gold;
+    font-size: 25px;
+    margin-left: 15px;
+}
+
+.Team_icon_1_i:hover{
+    color: rgb(255, 255, 255);
+}
+
+/* ........................................................... Recent News .......................................................... */
+
+.RECENT_NEWS{
+    width: 100%;
+    height: 120vh;
+    position: relative;
+    top: 0;
+}
+
+.Recent_item{
+    width: 25%;
+    margin-top: 50PX;
+    margin-left: 95PX;
+    padding:0PX 30px 10px 20px;
+    float: left;
+}
+
+.Recent_info_list{
+    list-style-type: none;
+    display: inline;
+    margin-bottom: 80px;
+
+}
+
+.Recent_info_list li{
+    display: inline-block;
+    margin:20px 20px 15px 0px;
+
+}
+
+.Recent_info_list_icon{
+    color: rgb(112, 153, 248);
+}
+
+.Recent_info_h3{
+    font-size: 25px;
+    margin:0px 0px 15px 0px;
+}
+
+.Recent_info_p{
+    color: rgb(142, 142, 142);
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.Recent_info_a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(0, 119, 255);
+    margin-top: 20px;
+
+}
+
+.Recent_info{
+    margin-bottom: 40px;
+}
+
+.Recent_item{
+    position:relative;
+}
+
+.Recent_item::after{
+    position: absolute;
+    content: "";
+    
+    width: 100%;
+    height: 0;
+    
+    top: 0;
+    left: 0;
+    
+    background-color: rgb(171, 171, 255);
+    opacity: 0;
+    z-index: -1;
+    transition: 1s;
+}
+
+.Recent_item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: .9;
+    
+}
+
+/* ........................................................... Login .......................................................... */
+
+.Login_all{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(10, 10, 10);
+    position: relative;
+    top:0;
+}
+.Login_out{
+    width: 60%;
+    height: 550px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%  ,-50% );
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    overflow: auto;
+}
+ 
+.Login_img{
+    width: 45%;
+    height: 92%;
+    margin: 20px;
+    background-image: url(../Image/log1.jpg);
+    background-size: cover;
+    float: left;
+}
+
+.Login_info{
+    width: 45%;
+    height: 92%;
+    float: left;
+    margin: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.Login_info_h2{
+    font-size: 35px;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+.Login_info_inp_1{
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    color: rgb(72, 68, 68);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 47%;
+    height: 30px;
+    padding: 2px;
+    margin-bottom: 25px;
+}
+
+.Login_info_all {
+    position: relative; 
+}
+.Login_info_all i {
+    position: absolute;
+    bottom: 9px;
+    right: 0; 
+}
+
+.Login_info_inp_2{
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    color: rgb(72, 68, 68);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    display: block;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    height: 30px;
+    padding: 3px;
+    margin-bottom: 25px;
+}
+
+.Login_info_buts{
+    font-size: 70px;
+}
+
+.Login_info_but1{
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    margin-left: 25px;
+    border: none;
+    color: gold;
+    background-color: black;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+
+.Login_info_but1:hover{
+    color: white;
+    background-color: rgb(29, 27, 27);
+}
+
+.Login_info_but2{
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    margin-left: 5px;
+    border: none;
+    color: gold;
+    background-color: black;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.Login_info_but2:hover{
+    color: white;
+    background-color: rgb(29, 27, 27);
+}
+
+/* ........................................................... Footer .......................................................... */
+
+.footer{
+    background-color: rgb(29, 26, 26);
+    padding: 20px;
+    margin-top: auto;
+    overflow: auto;
+}
+
+.footer_1{
+    width: 22%;
+    float: left;
+    margin-left: 7%;
+}
+
+.h2{
+    color: white;
+}
+
+.footer_1_i{
+    color: white;
+    font-size: 25px;
+}
+
+.footer_1_a{
+    color: white;
+    text-decoration:none;
+    display: block;
+    line-height: 30px;
+    font-size: 18px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer_1_a:hover,.footer_1_i:hover{
+    color: rgb(96, 146, 226);
+}
+
+.footer_2{
+    width: 22%;
+    float: left;
+    margin-left: 5%;
+}
+.footer_2_p{
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    line-height: 25px;
+    font-size: 18px;
+}
+
+.footer-3{
+    width: 15%;
+    float: left;
+    margin-left: 5%;
+}
+
+.footer_2_a{
+    color: white;
+    text-decoration:none;
+    display: block;
+    line-height: 30px;
+    font-size: 18px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.footer_2_a:hover{
+    color: rgb(96, 146, 226);
+}
+
+.footer-4{
+    width: 22%;
+    float: left;
+}
+
+.footer-4_input{
+    width: 74%;
+    font-size: 15px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+    background-color: rgb(29, 26, 26);
+    padding: 2px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer-4_bot{
+    font-size:20PX;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: none;
+    padding: 7PX 65PX;
+    color: white;
+    background-color:rgb(14, 84, 195) ;
+}
+
+.footer-4_bot:hover{
+    background-color: rgb(83, 83, 89);;
+}
+
+.last_div{
+    width: 100%;
+    height: 10%;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    color: rgb(62, 61, 61);
+}
